@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>计时器</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="app.js"></script>
+</head>
+
+<body onkeydown="handleKeyboardEvent()">
+	<header>
+		<div class="control" id="dcounter">
+			<input id="hour" placeholder="0">
+			<input id="minute" placeholder="0">
+			<input id="second" placeholder="0">
+			<label id="lhour" for="hour">时</label>
+			<label id="lminute" for="minute">分</label>
+			<label id="lsecond" for="second">秒</label>
+			<button id="countup" onclick="countup()">开始正计时</button>
+			<button id="countdown" onclick="countdown()">开始倒计时</button>
+		</div>
+		<div class="control" id="dbuttons">
+			<label id="hint" for="resume">暂停倒计时 12:20:00</label>
+			<button id="resume" onclick="resume()">恢复计时器</button>
+			<button id="pause" onclick="pause()">暂停计时器</button>
+			<button id="clear" onclick="clearcount()">清空倒计时</button>
+			<button id="restart" onclick="recount()" onmousedown="loseFocus(e)">重新再计时</button>
+		</div>
+	</header>
+	<div id="time">
+		00:00:00
+	</div>
+</body>
+
+</html>
+

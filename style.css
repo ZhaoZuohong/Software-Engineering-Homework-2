@@ -1,0 +1,139 @@
+@font-face {
+	font-family: "PT Mono";
+	src: url("https://db.onlinewebfonts.com/t/49b13300202f25c085c731d216fab421.eot");
+	src: url("https://db.onlinewebfonts.com/t/49b13300202f25c085c731d216fab421.eot?#iefix") format("embedded-opentype"),
+	url("https://db.onlinewebfonts.com/t/49b13300202f25c085c731d216fab421.woff2") format("woff2"),
+	url("https://db.onlinewebfonts.com/t/49b13300202f25c085c731d216fab421.woff") format("woff"),
+	url("https://db.onlinewebfonts.com/t/49b13300202f25c085c731d216fab421.ttf") format("truetype"),
+	url("https://db.onlinewebfonts.com/t/49b13300202f25c085c731d216fab421.svg#PT Mono") format("svg");
+	font-weight: normal;
+} 
+
+@font-face {
+	font-family: "PT Mono";
+	src: url("https://db.onlinewebfonts.com/t/20265ec72018243ecec78799c5b59d39.eot");
+	src: url("https://db.onlinewebfonts.com/t/20265ec72018243ecec78799c5b59d39.eot?#iefix") format("embedded-opentype"),
+	url("https://db.onlinewebfonts.com/t/20265ec72018243ecec78799c5b59d39.woff2") format("woff2"),
+	url("https://db.onlinewebfonts.com/t/20265ec72018243ecec78799c5b59d39.woff") format("woff"),
+	url("https://db.onlinewebfonts.com/t/20265ec72018243ecec78799c5b59d39.ttf") format("truetype"),
+	url("https://db.onlinewebfonts.com/t/20265ec72018243ecec78799c5b59d39.svg#PT Mono") format("svg");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "PingFang SC";
+	src: url("https://db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.eot");
+	src: url("https://db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.eot?#iefix") format("embedded-opentype"),
+	url("https://db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.woff2") format("woff2"),
+	url("https://db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.woff") format("woff"),
+	url("https://db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.ttf") format("truetype"),
+	url("https://db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.svg#PingFang SC") format("svg");
+} 
+
+body {
+	background: #f2f4f7;
+	margin: 0;
+}
+
+header {
+	background: #97a5bc;
+	width: 1220px;
+	height: 70px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+}
+
+.control {
+	width: 1140px;
+	height: 40px;
+	position: absolute;
+	top: 15px;
+	left: 40px;
+}
+
+#dcounter { visibility: visible; }
+#dbuttons { visibility: hidden; }
+
+input {
+	box-sizing: border-box;
+	color: #afafaf;
+	font: 'PingFang SC', PingFangSC-Regular, sans-serif;
+	font-size: 16px;
+	border: none;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+	border-radius: 5px;
+	border-width: 0;
+	outline-width: 0;
+	width: 70px;
+	height: 40px;
+	position: absolute;
+	padding-left: 9px;
+}
+
+label {
+	color: white;
+	font-size: 16px;
+	font-family: 'PT Mono', 'PingFang SC', PTMono-Bold, PingFangSC-Regular, sans-serif;
+	position: absolute;
+	top: 9px;
+	width: 32px;
+	height: 22px;
+}
+
+button {
+	font-family: 'PingFang SC', PingFangSC-Regular, sans-serif;
+	font-size: 16px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+	width: 98px;
+	height: 40px;
+	border: none;
+	border-width: 0;
+	border-radius: 5px;
+	position: absolute;
+	background-color: #2188e9;
+	color: #ffffff;
+}
+
+#dcounter label {
+	color: #222222;
+	text-align: right;
+}
+
+#hour { left: 0; }
+#minute { left: 90px; }
+#second { left: 180px; }
+#lhour { left: 29px; }
+#lminute { left: 119px; }
+#lsecond { left: 209px; }
+#countup { left: 270px; }
+#countdown { left: 388px; }
+
+#clear {
+	background: #dd2e1d;
+	left: 924px;
+}
+
+#restart {
+	background: #ffb020;
+	left: 1042px;
+}
+
+#resume {
+	left: 187px;
+	visibility: hidden;
+}
+
+#pause {
+	left: 187px;
+	visibility: hidden;
+}
+
+#hint { width: 192px; }
+
+#time {
+	margin-top: 115px;
+	margin-left: 131px;
+	font-family: 'PT Mono', PTMono-Bold, monospace;
+	font-weight: bold;
+	font-size: 200px;
+	color: #333333;
+}
